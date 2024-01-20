@@ -14,18 +14,28 @@
             </div>
             <ol class="desafio">
                 <li class="desafio_1">
-                    <p>conteudo</p>
-                    <input type="number" min="1" max="10" class="container_input" />
-                    <button onclick="calcularIMC()" class="container_botao" disabled>Calcular o IMC</button>
+                    <p id="atividade_1" class="container_desafio">Desafio - 1</p>
+                    <span class="span_desc_campo">Digite seu peso:</span>
+                    <input id="peso" type="number" min="1" max="10" class="container_input" /> 
+                    <span class="span_desc_campo">Digite sua altura:</span>
+                    <input id="altura" type="number" min="1" max="10" class="container_input" /> 
+                    <button onclick="calcularImc()" class="container_botao">Calcular o IMC</button>
+                    <p id="resultadoImc" class="container_resultado">Calculadora IMC...</p>
                 </li>
-                <li class="desafio_2"></li>
+                <li class="desafio_2">
+                    <p id="atividade_2" class="container_desafio">Desafio - 2</p>
+                    <input type="number" min="1" max="10" id="numero" class="container_input">
+                    <button onclick="calcularFatorial()" id="fatorial" class="container_botao">calcula o Fatorial</button>
+                    <p id="" class="container_resultado">Calculra o fatorial de um número...</p>
+                </li>
                 <li class="desafio_3"></li>
                 <li class="desafio_4"></li>
                 <li class="desafio_5"></li>
                 <li class="desafio_6"></li>
             </ol>
-            <p class="resulado_exercicio">Mostrar o resultado</p>
         </div>
     </div>
+    <script src="exercicio1.js" defer></script>
+    <script src="exercicio2.js" defer></script>
 </body>
 </html>
