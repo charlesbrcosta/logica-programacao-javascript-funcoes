@@ -1,6 +1,7 @@
 //atividade 1 - calcular o IMC
 let peso;
 let altura;
+
 function exibirNaTela( id, texto ){
     let campo = document.getElementById( id );
     campo.textContent = texto;
@@ -19,30 +20,14 @@ function imc( peso, altura ) {
  function calcularImc() {
     peso = document.getElementById( 'peso' ).value;
     altura = document.getElementById( 'altura' ).value;
-
-    if (isNaN(peso) || isNaN(altura)) {
-        exibirNaTela( 'resultadoImc', 'erro' );
-    } else {
-        resultadoImc = imc( peso, altura );
-        exibirNaTela( 'resultadoImc', resultadoImc );   
-        limparCampo();
-    }    
+    resultImc = imc( peso, altura );
+    exibirNaTela( 'resultadoImc', resultImc );   
+    limparCampo();    
  }
 
  function limparCampo() {
     peso = document.getElementById( 'peso' );
     altura = document.getElementById( 'altura' );
-    
-    if ( peso && altura ) {
-        peso.value = '';
-        altura.value = '';
-    } else {
-        console.error( 'IDs de campos inválidos' );
-    }
-    
+    peso.value = '';
+    altura.value = '';    
  }
-
-//---------------------------------------------------------------------------------------------
-
-
- 
