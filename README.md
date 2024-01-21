@@ -1,12 +1,16 @@
 # ONE - Oracle Next Education + Alura
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
-![Badge Marking HTML5](https://img.shields.io/badge/Marking-HTML5-orange)
-![Badge script JavaScript](https://shields.io/badge/SJ-JavaScript-yellow)
+<div style="display: inline" >
+    <img width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+    <img width="40" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+    <img width="40" height="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />          
+</div>
+          
+ <br /> 
 
-![Em Desenvolvimento](<img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/3d-fluency-under-construction.png" alt="3d-fluency-under-construction"/>)
+> Status do Projeto: Em desenvolvimento :warning:       
+          
 
 <h3>O desafio tem como objetivo a prática das funções para aprimorar a lógica de programção. Esse projeto serve como base para ajudar muitos que estão começando nessa jornada maravilhosa, que é a programação. </h3>
-
-
