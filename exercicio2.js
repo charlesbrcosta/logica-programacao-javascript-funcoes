@@ -7,17 +7,15 @@ function exibirNaTela( id, texto ) {
 
 exibirNaTela( 'atividade_2', 'Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.');
 
-limparCampo();
-
 function calcularFatorial() {
    let num = document.getElementById( 'numero' ).value;
 
     if ( isNaN( Number( num )) || num === '') {
         exibirNaTela('resultadoFatorial', 'Error. Campo vazio ou não foi informado um número')
-        limparCampo();
     } else {
         exibirNaTela( 'resultadoFatorial', formulaFatorial( num )); 
         limparCampo();
+        console.log('entrou no if - calcularFatorial')
     }           
 }
 
