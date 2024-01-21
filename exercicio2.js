@@ -10,9 +10,9 @@ exibirNaTela( 'atividade_2', 'Crie uma função que calcule o valor do fatorial 
 limparCampo();
 
 function calcularFatorial() {
-    let num = parseInt( document.getElementById( 'numero' ).value );
-    console.log(num);
-    if ( isNaN( num )) {
+   let num = document.getElementById( 'numero' ).value;
+
+    if ( isNaN( Number( num )) || num === '') {
         exibirNaTela('resultadoFatorial', 'Error. Campo vazio ou não foi informado um número')
         limparCampo();
     } else {
@@ -23,9 +23,7 @@ function calcularFatorial() {
 
 function formulaFatorial( num ) {
     let resultado = 1;
-
-    if ( Number.isInteger( num ) || num % 1 === 0 ) {
-     
+    if ( Number.isInteger(Number( num ))) {
         if ( num === 1 || num === 0 ) { 
             return 1;
         } else {
@@ -36,12 +34,18 @@ function formulaFatorial( num ) {
         }
         return resultado;
     } else {
-        console.log(num)
         return 1;
     }
 }
 
 function limparCampo() {
-    num = document.getElementById( 'numero' );
-    num.value = '';
+    console.log('Limpeza chamada');
+    let numeroElement = document.getElementById( 'numero' );
+
+    if (numeroElement) {
+        numeroElement.value = '';
+        console.log('Entrou no if');
+    } else {
+        console.error('Elemento com ID "numero" não encontrado.');
+    }
 }

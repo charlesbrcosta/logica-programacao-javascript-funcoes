@@ -15,7 +15,7 @@
             <ol class="desafio">
                 <li class="desafio_1">
                     <p id="atividade_1" class="container_desafio">Desafio - 1</p>
-                    <span class="span_desc_campo">Digite seu peso:</span>
+                    <span class="container_descricao">Digite seu peso:</span>
                     <input id="peso" type="number" min="1" max="10" class="container_input" /> 
                     <span class="span_desc_campo">Digite sua altura:</span>
                     <input id="altura" type="number" min="1" max="10" class="container_input" /> 
@@ -24,11 +24,18 @@
                 </li>
                 <li class="desafio_2">
                     <p id="atividade_2" class="container_desafio">Desafio - 2</p>
-                    <input type="number" min="1" max="10" id="numero" class="container_input">
+                    <span class="container_descricao">Digite o número:</span>
+                    <input type="number" min="1" max="10" id="numero" class="container_input" />
                     <button onclick="calcularFatorial()" id="fatorial" class="container_botao">calcula o Fatorial</button>
                     <p id="resultadoFatorial" class="container_resultado">Resultado</p>
                 </li>
-                <li class="desafio_3"></li>
+                <li class="desafio_3">
+                    <p id="atividade_3" class="container_desafio">Desafio - 3</p>
+                    <span class="container_descricao">Digite o valor em $:</span>
+                    <input type="number" min="1" max="10" id="dinheiro" class="container_input" />
+                    <button onclick="converterDolarEmReal()" id="dolar" class="container_botao">Converter $ em R$</button>
+                    <p id="resultadoConversao" class="container_resultado">Resultado</p>
+                </li>
                 <li class="desafio_4"></li>
                 <li class="desafio_5"></li>
                 <li class="desafio_6"></li>
@@ -37,5 +44,6 @@
     </div>
     <script src="exercicio1.js" defer></script>
     <script src="exercicio2.js" defer></script>
+    <script src="exercicio3.js" defer></script>
 </body>
 </html>
