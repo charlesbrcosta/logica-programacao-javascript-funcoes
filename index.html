@@ -20,38 +20,48 @@
                     <span class="span_desc_campo">Digite sua altura:</span>
                     <input id="altura" type="number" min="1" max="10" class="container_input" /> 
                     <button onclick="calcularImc()" class="container_botao">Calcular o IMC</button>
-                    <p id="resultadoImc" class="container_resultado">Resultado</p>
+                    <p id="resultadoImc" class="container_resultado">R.:</p>
                 </li>
                 <li class="desafio_2">
                     <p id="atividade_2" class="container_desafio">Desafio - 2</p>
                     <span class="container_descricao">Digite o número:</span>
                     <input type="number" min="1" max="10" id="numero" class="container_input" />
                     <button onclick="calcularFatorial()" id="fatorial" class="container_botao">calcula o Fatorial</button>
-                    <p id="resultadoFatorial" class="container_resultado">Resultado</p>
+                    <p id="resultadoFatorial" class="container_resultado">R.:</p>
                 </li>
                 <li class="desafio_3">
                     <p id="atividade_3" class="container_desafio">Desafio - 3</p>
                     <span class="container_descricao">Digite o valor em $:</span>
-                    <input type="number" min="1" max="10" id="dinheiro" class="container_input" />
-                    <button onclick="converterDolarEmReal()" id="dolar" class="container_botao">Converter $ em R$</button>
-                    <p id="resultadoConversao" class="container_resultado">Resultado</p>
+                    <input type="number" min="1" max="10" id="valor" class="container_input" />
+                    <button onclick="converterDolarEmReal()" id="conversor" class="container_botao">Converter $ em R$</button>
+                    <p id="resultadoConversao" class="container_resultado">R.:</p>
                 </li>
-                <li class="desafio_4"></li>
+                <li class="desafio_4">
                     <p id="atividade_4" class="container_desafio">Desafio - 4</p>
                     <span class="container_descricao">Digite a altura:</span>
-                    <input id="altura_sala" type="number" min="1" max="10" class="container_input" /> 
+                    <input id="alturaRet" type="number" min="1" max="10" class="container_input" /> 
                     <span class="span_desc_campo">Digite a largura:</span>
-                    <input id="base_sala" type="number" min="1" max="10" class="container_input" /> 
+                    <input id="baseRet" type="number" min="1" max="10" class="container_input" /> 
                     <button onclick="calcularAreaPerimetro()" class="container_botao">Calcular Área / perímetro</button>
-                    <p id="resultadAreaPerimetro" class="container_resultado">Resultado</p>
-                <li class="desafio_5"></li>
-                <li class="desafio_6"></li>
+                    <p id="resultadAreaPerimetro" class="container_resultado">R.:</p>
+                </li>
+                <li class="desafio_5">
+                    <p id="atividade_5" class="container_desafio">Desafio - 5</p>
+                    <span class="container_descricao">Digite o raio do círculo:</span>
+                    <input id="raioCirculo" type="number" min="1" max="10" class="container_input" /> 
+                    <button onclick="calcularAreaPerimetroCirculo()" class="container_botao">Calcular Área / Perímetro</button>
+                    <p id="resultadAreaPerimetroCirculo" class="container_resultado">R.:</p>
+                </li>
+                <li class="desafio_6">
+                    <p id="atividade_6" class="container_desafio">Desafio - 6</p>
+                    <span class="container_descricao">Digite um número:</span>
+                    <input type="number" min="1" max="10" id="tab" class="container_input" />
+                    <button onclick="gerarTabuada()" id="conversor" class="container_botao">Gerar tabuada</button>
+                    <p id="resultadoTabuada" class="container_resultado">R.:</p>
+                </li>
             </ol>
         </div>
     </div>
-    <script src="exercicio1.js" defer></script>
-    <script src="exercicio2.js" defer></script>
-    <script src="exercicio3.js" defer></script>
-    <script src="exercicio4.js" defer></script>
+    <script src="exercicio.js" defer></script>
 </body>
 </html>
